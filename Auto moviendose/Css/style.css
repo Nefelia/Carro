@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.fondo{
+    background-image: url(./eamd_2xz0_201217_ss4mp_generated.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    height: 70rem;
+}
+
+.fondo_anim{
+    animation: fondo 15s infinite linear;
+}
+
+.vehiculo{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 90rem;
+}
+
+.moto{
+    top: 20rem;
+    left: 40rem;
+    width: 40rem;
+}
+
+.ruedas, .ruedas2{
+    position: relative;
+    width: 11rem;
+}
+
+.izq, .drch, .moto{
+    position: relative;
+}
+
+.izq{
+    top: 6rem;
+    left: 43.3rem;
+}
+
+.drch{
+    top: -5rem;
+    left: 65rem;
+}
+
+.ruedas_anim{
+    animation: ruedas-move 1s infinite linear;
+}
+
+@keyframes ruedas-move{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fondo {
+    100%{
+        background-position-x: -1000rem;
+    }
+}
+
+.polvo{
+    position: relative;
+    background: url(./Dust.png);
+    bottom: 10rem;
+    left: 36rem;
+    height: 53px;
+    width: 120px;
+    animation: dust 0.9s infinite steps(11);
+}
+
+.oculto{
+    display: none;
+}
+
+@keyframes dust{
+    100%{
+        background-position-x: -1320px;
+    }
+}
+
+.laluz {
+    position: relative;
+    height: 10rem;
+    left: 70rem;
+    bottom: 27rem;
+    animation: light 1s linear infinite;
+}
+
+.oculto2{
+    display: none;
+}
+
+@keyframes light{
+    100%{
+        opacity: 50%;
+    }
+}
+
